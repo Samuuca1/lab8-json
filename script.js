@@ -15,6 +15,8 @@ console.log(student.name);
 student.basicinfo();
 
 
-//Part 2 Json
+//Part 2 Json (Convert JSON into a JS Object)
 
-let jsonString = '{"name":"Samuel" , "age": 28, "enrolled": true, "courses":["Math", "Database", "WRIT120", "JavaScript"]'
+let jsonString = '{"name":"Samuel" , "age": 28, "enrolled": true, "courses":["Math", "Database", "WRIT120", "JavaScript"]}';
+let jsonJSObj = JSON.parse(jsonString);
+console.log(jsonJSObj.name);
