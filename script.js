@@ -42,3 +42,12 @@ let [first, second] = scores;
 
 console.log(first);
 console.log(second);
+
+
+// Part 4 Spread operator
+
+let clonedStu = {...student};
+console.log(clonedStu);
+
+clonedStu.graduationYear = 2026;
+console.log(clonedStu);
