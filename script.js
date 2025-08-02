@@ -16,3 +16,5 @@ student.basicinfo();
 
 
 //Part 2 Json
+
+let jsonString = '{"name":"Samuel" , "age": 28, "enrolled": true, "courses":["Math", "Database", "WRIT120", "JavaScript"]'
