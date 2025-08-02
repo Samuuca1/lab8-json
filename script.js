@@ -5,7 +5,7 @@ let student = {
     age: 28,
     enrolled: true,
     courses: ['Math', 'Database', 'WRIT120', 'JavaScript'],
-    basicinfo: function(){
+    basicinfo: function () {
         console.log("Hey, my name is " + this.name + " and I am enrolled to " + this.courses);
     }
 };
@@ -33,7 +33,7 @@ console.log("\n");
 
 // Part 3 Destructuring 
 
-let { name, courses} = student
+let { name, courses } = student
 console.log(name);
 console.log(courses);
 
@@ -46,11 +46,13 @@ console.log("\n");
 
 // Part 4 Spread operator
 
-let clonedStu = {...student};
+let clonedStu = { ...student };
 console.log(clonedStu);
 
 clonedStu.graduationYear = 2026;
 console.log(clonedStu);
+
+
 
 // Add courses and combining the arrays 
 
@@ -58,3 +60,39 @@ let moreCourses = ["Operating Systems", "3D Art Modeling"];
 let allCourses = [...student.courses, ...moreCourses];
 
 console.log(allCourses);
+console.log("\n");
+
+
+//Part 5 Methods
+let student3 = {
+    name: "SamuelC",
+    courses2: ["Geography", "Biology", "English"],
+
+    addingCourses(newCourse) {
+        this.courses2.push(newCourse)
+    },
+
+    totalNumCourses() {
+        return this.courses2.length;
+    }
+};
+
+student3.addingCourses("Computer Science");
+
+console.log(student3.totalNumCourses());
+
+console.log(student3.courses2);
+console.log("\n");
+
+
+//PART BONUS
+
+let scores2 = [85, 92, 78, 90];
+
+
+let total = scores2.reduce((acc, score) => acc + score, 0);
+
+
+let average = total / scores2.length;
+
+console.log(average);
