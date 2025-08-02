@@ -33,3 +33,8 @@ console.log("\n");
 
 // Part 3 Destructuring 
 
+let { name, courses} = student
+console.log(name);
+console.log(courses);
+
+
