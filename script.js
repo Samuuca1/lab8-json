@@ -10,3 +10,6 @@ let student = {
     }
 };
 
+console.log(student.age);
+console.log(student.name);
+student.basicinfo();
