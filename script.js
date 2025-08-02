@@ -20,3 +20,11 @@ student.basicinfo();
 let jsonString = '{"name":"Samuel" , "age": 28, "enrolled": true, "courses":["Math", "Database", "WRIT120", "JavaScript"]}';
 let jsonJSObj = JSON.parse(jsonString);
 console.log(jsonJSObj.name);
+
+// Part 2 Json (Stringify)
+
+let student2 = {
+    name2: "Julio",
+    age2: 33
+};
+
