@@ -42,7 +42,7 @@ let [first, second] = scores;
 
 console.log(first);
 console.log(second);
-
+console.log("\n");
 
 // Part 4 Spread operator
 
@@ -51,3 +51,10 @@ console.log(clonedStu);
 
 clonedStu.graduationYear = 2026;
 console.log(clonedStu);
+
+// Add courses and combining the arrays 
+
+let moreCourses = ["Operating Systems", "3D Art Modeling"];
+let allCourses = [...student.courses, ...moreCourses];
+
+console.log(allCourses);
