@@ -37,4 +37,8 @@ let { name, courses} = student
 console.log(name);
 console.log(courses);
 
+let scores = [85, 92, 78, 90];
+let [first, second] = scores;
 
+console.log(first);
+console.log(second);
