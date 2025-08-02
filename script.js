@@ -28,3 +28,5 @@ let student2 = {
     age2: 33
 };
 
+let jsonStringify = JSON.stringify(student2);
+console.log(jsonStringify);
